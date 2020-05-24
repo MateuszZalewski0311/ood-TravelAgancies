@@ -1,3 +1,3 @@
 # Travel Agancies
-This is an app imitating interaction with\
-Travel Agancies databases.
+Thi is an application simulating the workflow\
+of the tourism industry advertising with use of provided data sources.
