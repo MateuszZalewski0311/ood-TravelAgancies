@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15ECEE75-3B43-49D5-8205-5AE246949FE4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OOD_Task6</RootNamespace>
+    <AssemblyName>OOD_Task6</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvertisingAgencies\IAdvertisingAgency.cs" />
+    <Compile Include="AdvertisingAgencies\GraphicAdvertisingAgency.cs" />
+    <Compile Include="AdvertisingAgencies\OfferWebsite.cs" />
+    <Compile Include="AdvertisingAgencies\TextAdvertisingAgancy.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\GraphicPermanentTripOffer.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\GraphicTemporaryTripOffer.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\PermanentTripOffer.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\TemporaryTripOffer.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\TextPermanentTripOffer.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\TextTemporaryTripOffer.cs" />
+    <Compile Include="TravelAgencies\FranceTravelAgancy.cs" />
+    <Compile Include="TripOfferData\Photo\FrancePhoto.cs" />
+    <Compile Include="TripOfferData\Photo\IPhoto.cs" />
+    <Compile Include="TripOfferData\Photo\ItalyPhoto.cs" />
+    <Compile Include="TripOfferData\Photo\PolandPhoto.cs" />
+    <Compile Include="TripOfferData\Review\FranceReview.cs" />
+    <Compile Include="TripOfferData\Review\IReview.cs" />
+    <Compile Include="TravelAgencies\ItalyTravelAgancy.cs" />
+    <Compile Include="TripOfferData\Review\ItalyReview.cs" />
+    <Compile Include="TripOfferData\Review\PolandReview.cs" />
+    <Compile Include="TripOfferData\Trip\FranceTrip.cs" />
+    <Compile Include="TripOfferData\Trip\ItalyTrip.cs" />
+    <Compile Include="TripOfferData\Trip\ITrip.cs" />
+    <Compile Include="TravelAgencies\PolandTravelAgency.cs" />
+    <Compile Include="TravelAgencies\TravelAgency.cs" />
+    <Compile Include="DataAccess\Booking.cs" />
+    <Compile Include="DataAccess\Codecs\CezarCodec.cs" />
+    <Compile Include="DataAccess\Codecs\FrameCodec.cs" />
+    <Compile Include="DataAccess\Codecs\ICodec.cs" />
+    <Compile Include="DataAccess\Codecs\PushCodec.cs" />
+    <Compile Include="DataAccess\Codecs\ReverseCodec.cs" />
+    <Compile Include="DataAccess\Codecs\SwapCodec.cs" />
+    <Compile Include="DataAccess\IDecodable.cs" />
+    <Compile Include="DataAccess\IDecoder.cs" />
+    <Compile Include="DataAccess\IIterable.cs" />
+    <Compile Include="DataAccess\IIterator.cs" />
+    <Compile Include="DataAccess\Oyster.cs" />
+    <Compile Include="DataAccess\ShutterStock.cs" />
+    <Compile Include="DataAccess\TripAdvisor.cs" />
+    <Compile Include="Init\BookingGenerator.cs" />
+    <Compile Include="Init\DBGeneratorUtils.cs" />
+    <Compile Include="Init\Init.cs" />
+    <Compile Include="Init\OysterGenerator.cs" />
+    <Compile Include="Init\ShutterStockGenerator.cs" />
+    <Compile Include="Init\TripAdvisorGenerator.cs" />
+    <Compile Include="TravelAgencies\ITravelAgency.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="AdvertisingAgencies\TripOffers\ITripOffer.cs" />
+    <Compile Include="TripOfferData\Trip\PolandTrip.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

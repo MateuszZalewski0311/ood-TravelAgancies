@@ -1,0 +1,7 @@
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\obj\Debug\OOD_Task6.csprojAssemblyReference.cache
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\obj\Debug\OOD_Task6.csproj.CoreCompileInputs.cache
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\bin\Debug\OOD_Task6.exe.config
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\bin\Debug\OOD_Task6.exe
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\bin\Debug\OOD_Task6.pdb
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\obj\Debug\OOD_Task6.exe
+D:\Programowanie\C#\Projects vs19\OOD_Task6\OOD_Task6\obj\Debug\OOD_Task6.pdb
